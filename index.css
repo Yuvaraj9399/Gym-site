@@ -1,0 +1,566 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;height: auto;
+    background-image: linear-gradient(black,black,black);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+                    /* nav */
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;width: 100%;
+}
+.subnav{
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.subnav a{
+    text-decoration: none;
+    color: white;
+    
+}
+.subnav a:hover{
+    color: #FDE724;
+}
+.logo{
+    text-align: center;
+    width: 150px;
+    background-color: black;
+    
+}
+.logo img{
+    width: 70%;height: 100%;
+}
+nav label{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    display: none;
+}
+input:checked~.subnav{
+    left: 0%;
+}
+nav input{
+    display: none;
+}
+.menu{
+    color: #FDE724;
+}
+/* ************************************************** */
+
+                    /* Home */
+
+main{
+    border: 1px solid black;
+    height: 80vh;width: 75%;
+    background: url("./Homebackground\ image.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+main h1{
+    color: white;
+    font-size: 60px;
+}
+main button{
+    width: 200px;
+    height: 50px;
+    background-color: #FDE724;
+    border: #FDE724;
+}
+main span{
+    color: #FDE724;
+}
+/* ************************************************************* */
+
+                /* About page */
+article{
+    border: 1px solid black;
+    height: 80vh;width: 75%;
+    background-color: black;
+}
+.ab-head{
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+}
+.ab-head h1:first-child{
+    font-size: 120px;
+}
+.ab-head h3{
+    position: relative;
+    top: -50px;
+    font-size: 50px;
+    color: white;
+}
+.ab-head h1:last-child{
+    position: absolute;
+    text-align: left;
+    left: 20px;
+    top: 0%;
+    font-size: 200px;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    
+    
+}
+.ab-content{
+    height: 65%;
+    display: flex;
+
+}
+.ab-box{
+    width: 100%;height: 100%;
+    
+}
+
+/* ************************************************* */
+
+                            /* Trainers */
+
+.section1{
+    border: 1px solid black;
+    height: auto;width: 75%;
+    background-color: black;
+}
+.t-head{
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+}
+.t-head h1:first-child{
+    font-size: 120px;
+}
+.t-head h3{
+    position: relative;
+    top: -50px;
+    font-size: 50px;
+    color: white;
+}
+.t-head h1:last-child{
+    position: absolute;
+    text-align: left;
+    right: 20px;
+    top: 0%;
+    font-size: 200px;
+    color: transparent;
+    -webkit-text-stroke: 2px white; 
+    z-index: 1;
+}
+.t-members{
+    height: 65%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+.t-cards{
+    width: 250px;height: 250px;
+    position: relative;
+}
+.t-cards div{
+    height: 100%;width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #FDE724;
+    color: black;
+    justify-content: center;
+    position: absolute;
+    
+}
+.t-cards img{
+    position: absolute;
+}
+.t-cards h1{
+    border-bottom: 3px solid black;
+}
+.t-cards:hover div{
+    z-index: 1;
+    
+}
+
+/* ********************************************************** */
+                            /* Clasess */
+.section2{
+    border: 1px solid black;
+    height: auto;width: 75%;
+    background-color: black;
+}
+.cl-head{
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+}
+.cl-head h1:first-child{
+    font-size: 120px;
+}
+.cl-head h3{
+    position: relative;
+    top: -50px;
+    font-size: 50px;
+    color: white;
+}
+.cl-head h1:last-child{
+    
+    position: absolute;
+    text-align: left;
+    left: 20px;
+    top: 0%;
+    font-size: 200px;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    z-index: 1;
+}
+.cl-box{
+    width: 100%;height: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+.cl-card{
+    padding: 20px;
+    width: 400px;height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cl-card:hover{
+    transform: scale(1.1);
+}
+.cl-card h2{
+    color: white;
+}
+.cl-card button{
+    width: 100px;height: 50px;
+    background-color: #FDE724;
+    border: #FDE724;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card1{
+    background-image: url("./class1.jpg");
+}
+.card2{
+    background-image: url("./class2.jpg");
+}
+.card3{
+    background-image: url("./class3.jpg");
+}
+.card4{
+    background-image: url("./class4.jpg");
+}
+.goal{
+    height: 150px;width: 100%;
+    background-color: #FDE724;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.g-card{
+    text-align: center;
+    color: black;
+}
+.goal h1{
+    font-size: 80px;
+}
+
+/* ************************************************** */
+                        /* membership */
+
+.section3{
+            border: 1px solid black;
+            height: 100vh;width: 75%;
+            background-color: black;
+         }
+.m-head{
+            border: 1px solid black;
+            position: relative;
+            text-align: center;
+        }
+.m-head h1:first-child{
+            font-size: 120px;
+                        }
+.m-head h3{
+            position: relative;
+            top: -50px;
+            font-size: 50px;
+            color: white;
+            }
+.m-head h1:last-child{
+            
+            position: absolute;
+            text-align: left;
+            left: 20px;
+            top: 0%;
+            font-size: 200px;
+            color: transparent;
+            -webkit-text-stroke: 2px white;
+            z-index: 1;
+                        }
+.m-membership{
+    height: 71%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.m-card{
+    border: 1px solid white;
+    height: 450px;width: 300px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+.m-card table{
+    font-size: 20px;
+}
+.m-card p{
+    font-size: 25px;
+}
+p b{
+    font-size: 40px;
+}
+.m-card i:nth-child(2){
+    font-size: 60px;
+}
+.m-card td:nth-child(2) {
+    text-align: start;
+    padding-left: 10px;
+}
+.m-card button{
+    width: 150px;height: 50px;
+    background-color: #FDE724;
+    border: #FDE724;
+}
+.m-card:hover{
+    background-color: gray;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* *************************************** */
+footer{
+    background-color: #FDE724;
+    display: flex;width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+footer input{
+    width: 80%;
+    height: 50px;
+    outline: none;
+    border: 2px solid black;
+}
+footer button{
+    width: 19%;height: 50px;
+    margin-left: -10px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+                /* Media Query */
+
+@media only screen and (min-width:300px) and (max-width:600px){
+    .subnav{
+        flex-direction: column;
+        height: auto;width: 100%;
+        position: fixed;
+        top: 81px;
+        left: 120%;
+        transition: 1.2s;
+        background-color: #FDE724;
+    }
+    .subnav a{
+        color: black;
+    }
+    nav label{display: block;}
+    nav{ width: 100%;}
+
+    main{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    .home button{
+        font-size: large;
+    }
+    main h1{font-size: 30px;}
+    .ab-head h1:first-child{font-size: 50px;}
+    .ab-head h3{font-size: 20px;top: -20px;}
+    .ab-head h1:last-child{font-size: 70px;position: relative;left: 0%;text-align: center;}
+    .ab-content{flex-direction: column; height: auto;}
+    article{height: auto;width: 100%;}
+    .t-head h1:first-child{font-size: 50px;}
+    .t-head h3{font-size: 20px;top: -70px;}
+    .t-head h1:last-child{font-size: 70px;position: relative;left: 0%;text-align: center;}
+    .t-members{grid-template-columns: auto;}
+    .cl-head h1:first-child{font-size: 50px;}
+    .cl-head h3{font-size: 20px;top: -70px;}
+    .cl-head h1:last-child{font-size: 70px;position: relative;left: 0%;text-align: center;}
+    .cl-box{grid-template-columns: auto;}
+    .cl-card{
+        width: 100%;
+    }
+    .goal{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .m-head h1:first-child{font-size: 45px;}
+    .m-head h3{font-size: 20px;top: -20px;}
+    .m-head h1:last-child{font-size: 70px;position: relative;left: 0%;text-align: center;}
+    .section3{
+        height: auto;
+    }
+    .m-membership{
+        flex-direction: column;
+        gap: 50px;height: auto;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+    .section1,.section2,.section3,.goal,footer{width: 100%;}
+    
+
+}
+
+@media only screen and (min-width:600px) and (max-width:900px){
+    .subnav{
+        flex-direction: column;
+        height: auto;width: 100%;
+        position: fixed;
+        top: 81px;
+        left: 120%;
+        transition: 1.2s;
+        background-color: #FDE724;
+    }
+    .subnav a{
+        color: black;
+    }
+    .home button{
+        font-size: large;
+    }
+    nav label{display: block;}
+    nav{ width: 100%;}
+
+    main{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    main h1{font-size: 30px;}
+    .ab-head h1:first-child{font-size: 50px;}
+    .ab-head h3{font-size: 20px;top: -20px;}
+    .ab-head h1:last-child{font-size: 70px;position: relative;left: 0%;text-align: center;}
+    .ab-content{flex-direction: column; height: auto;}
+    article{height: auto;width: 100%;}
+    .t-head h1:first-child{font-size: 50px;}
+    .t-head h3{font-size: 20px;top: -20px;}
+    .t-head h1:last-child{font-size: 70px;position: relative;left: 0%;text-align: center;}
+    .t-members{grid-template-columns: auto auto;}
+    .cl-head h1:first-child{font-size: 50px;}
+    .cl-head h3{font-size: 20px;top: -20px;}
+    .cl-head h1:last-child{font-size: 70px;position: relative;left: 0%;text-align: center;}
+    .cl-box{grid-template-columns: auto;}
+    .cl-card{
+        width: 100%;
+    }
+    .goal{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .m-head h1:first-child{font-size: 50px;}
+    .m-head h3{font-size: 20px;top: -20px;}
+    .m-head h1:last-child{font-size: 70px;position: relative;left: 0%;text-align: center;}
+    .section3{
+        height: auto;
+    }
+    .m-membership{
+        flex-direction: column;
+        gap: 50px;height: auto;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+    .section1,.section2,.section3,.goal,footer{width: 100%;}
+
+}
+
+@media only screen and (min-width:900px) and (max-width:1200px){
+    .subnav{
+        flex-direction: column;
+        height: auto;width: 100%;
+        position: fixed;
+        top: 81px;
+        left: 120%;
+        transition: 1.2s;
+    }
+    .home button{
+        font-size: large;
+    }
+    nav label{display: block;}
+    nav{ width: 100%;}
+
+    main{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    article{height: auto;width: 100%;}
+    .t-members{grid-template-columns: auto auto auto;}
+    .cl-box{grid-template-columns: auto auto;}
+    .cl-card{
+        width: 100%;
+    }
+    .section3{
+        height: auto;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+    .section1,.section2,.section3,.goal,footer{width: 100%;}
+
+}
